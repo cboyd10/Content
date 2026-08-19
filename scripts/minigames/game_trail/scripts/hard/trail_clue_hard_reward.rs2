@@ -87,7 +87,7 @@ switch_int ($random) {
 }
 
 [proc,trail_clue_hard_ultrarare]()
-def_int $rand = random(2);
+def_int $rand = random(3);
 if($rand = 0) { // junk table
     $rand = random(4);
 
@@ -95,7 +95,7 @@ if($rand = 0) { // junk table
         case 0 : inv_add(trail_rewardinv, cert_4dose2energy, 15);
         case 1 : inv_add(trail_rewardinv, cert_4dose2restore, 15);
         case 2 : inv_add(trail_rewardinv, cert_4dose1antidragon, 15);
-        case 3 : 
+        case 3 :
             inv_add(trail_rewardinv, cert_4dose2attack, 5);
             inv_add(trail_rewardinv, cert_4dose2strength, 5);
             inv_add(trail_rewardinv, cert_4dose2defense, 5);
@@ -109,5 +109,42 @@ if($rand = 0) { // junk table
         case 2 : inv_add(trail_rewardinv, rune_full_helm_goldplate, 1);
         case 3 : inv_add(trail_rewardinv, rune_plateskirt_goldplate, 1);
         case 4 : inv_add(trail_rewardinv, rune_kiteshield_goldplate, 1);
+    }
+} else if($rand = 2) { // holiday table
+    gosub(trail_clue_hard_holiday);
+}
+
+[proc,trail_clue_hard_holiday]()
+def_int $category = random(3);
+if ($category = 0) { // partyhat, weighted per the 2001 cracker-pull rates (32/28/23/20/15/10 out of 128)
+    def_int $roll = random(128);
+
+    if ($roll < 32) {
+        inv_add(trail_rewardinv, red_partyhat, 1);
+    } else if ($roll < 60) {
+        inv_add(trail_rewardinv, yellow_partyhat, 1);
+    } else if ($roll < 83) {
+        inv_add(trail_rewardinv, white_partyhat, 1);
+    } else if ($roll < 103) {
+        inv_add(trail_rewardinv, green_partyhat, 1);
+    } else if ($roll < 118) {
+        inv_add(trail_rewardinv, blue_partyhat, 1);
+    } else {
+        inv_add(trail_rewardinv, purple_partyhat, 1);
+    }
+} else if ($category = 1) { // halloween mask, equal odds
+    $category = random(3);
+
+    switch_int ($category) {
+        case 0 : inv_add(trail_rewardinv, halloweenmask_green, 1);
+        case 1 : inv_add(trail_rewardinv, halloweenmask_blue, 1);
+        case 2 : inv_add(trail_rewardinv, halloweenmask_red, 1);
+    }
+} else if ($category = 2) { // santa hat / bunny ears, equal odds
+    $category = random(2);
+
+    switch_int ($category) {
+        case 0 : inv_add(trail_rewardinv, santa_hat, 1);
+        case 1 : inv_add(trail_rewardinv, bunnyears, 1);
     }
 }

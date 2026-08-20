@@ -1166,7 +1166,7 @@ if_openoverlay(null);
 // regular quest_complete song (osrs just uses ooks)
 [queue,mm_quest_complete]
 %mm_main = ^mm_complete;
-session_log(^log_adventure, "Quest complete: Monkey Madness");
+session_log(^log_adventure, "<displayname> completed Monkey Madness");
 queue(mm_complete_dialogue, 0, 0);
 ~send_quest_complete(questlist:mm, mm_monkey_in_backpack, 250, ^mm_questpoints, "You have completed the\\nMonkey Madness Quest!");
 

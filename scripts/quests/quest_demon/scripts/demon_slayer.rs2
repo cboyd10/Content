@@ -2,7 +2,7 @@
 
 [queue,demon_slayer_complete]
 %demonstart = ^demon_complete;
-session_log(^log_adventure, "Quest complete: Demon Slayer");
+session_log(^log_adventure, "<displayname> completed Demon Slayer");
 ~send_quest_complete(questlist:demon, silverlight, 250, ^demon_questpoints, "You have completed the\\nDemon Slayer Quest!");
 
 // Search Drain

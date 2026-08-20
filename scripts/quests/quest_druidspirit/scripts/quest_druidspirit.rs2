@@ -423,7 +423,7 @@ loc_change(peartree_druidicspirit, 25);
 stat_advance(crafting, 30000);
 stat_advance(hitpoints, 20000);
 stat_advance(defence, 20000);
-session_log(^log_adventure, "Quest complete: Nature Spirit");
+session_log(^log_adventure, "<displayname> completed Nature Spirit");
 queue(druidspirit_postquest, 0, 0);
 // https://web.archive.org/web/20061229194746im_/http://runeweb.net/rathofdoom/quests/naturespirit/8.png
 ~send_quest_complete(questlist:druidspirit, silver_sickle_blessed, 250, ^druidspirit_questpoints, "You have completed the 'Nature Spirit' Quest!");

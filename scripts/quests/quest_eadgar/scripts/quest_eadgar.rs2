@@ -590,7 +590,7 @@ spotanim_pl(eadgar_stunned, 124, 0);
 sound_synth(stun_all, 1, 0);
 
 [queue,eadgar_quest_complete]
-session_log(^log_adventure, "Quest complete: Eadgar's Ruse");
+session_log(^log_adventure, "<displayname> completed Eadgar's Ruse");
 %eadgar_quest = ^eadgar_complete;
 stat_advance(herblore, 110000);
 // https://web.archive.org/web/20051025140652im_/http://www.runeweb.net/fireball/Eadgars%20Ruse%20Images/Eadgar19.PNG

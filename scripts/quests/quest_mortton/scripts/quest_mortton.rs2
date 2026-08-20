@@ -64,7 +64,7 @@ stat_advance(herblore, 3350);
 %morttonquest = ^mortton_quest_complete;
 stat_advance(crafting,20000);
 stat_advance(herblore,20000);
-session_log(^log_adventure, "Quest complete: Shades of Mort'ton");
+session_log(^log_adventure, "<displayname> completed Shades of Mort'ton");
 //https://i.imgur.com/wgfP5rK.png
 ~send_quest_complete(questlist:mortton, shadekey_silver_purple, 250, ^mortton_questpoints, "'Shades of Mort'ton' Quest Complete!");
 

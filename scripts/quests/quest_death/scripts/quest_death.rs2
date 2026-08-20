@@ -214,7 +214,7 @@ return (getbit_range(%death_map, ^death_bet_lower, ^death_bet_upper));
 %death_map = setbit_range_toint(%death_map, $val, ^death_bet_lower, ^death_bet_upper);
 
 [queue,death_quest_complete]
-session_log(^log_adventure, "Quest complete: Death Plateau");
+session_log(^log_adventure, "<displayname> completed Death Plateau");
 %death_equiproom = ^death_complete;
 %death_bits = clearbit_range(%death_bits, ^death_haroldroll_lower, ^denulth_given_combo);
 inv_add(inv, steel_claws, 1);

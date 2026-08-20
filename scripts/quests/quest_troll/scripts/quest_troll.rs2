@@ -363,7 +363,7 @@ npc_del;
 
 [queue,troll_quest_complete]
 // https://web.archive.org/web/20051108023748/http://runescape.salmoneus.net/quests/TrollStronghold/trollstrholdcomplt.png
-session_log(^log_adventure, "Quest complete: Troll Stronghold");
+session_log(^log_adventure, "<displayname> completed Troll Stronghold");
 %troll_quest = ^troll_complete;
 inv_add(inv, law_talisman, 1);
 ~send_quest_complete(questlist:troll, law_talisman, 250, ^troll_questpoints, "You have completed\\nTroll Stronghold!");

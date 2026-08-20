@@ -263,7 +263,7 @@ switch_obj(last_useitem) {
 // QUEUE
 
 [queue,tbwt_quest_complete]
-session_log(^log_adventure, "Quest complete: Tai Bwo Wannai Trio");
+session_log(^log_adventure, "<displayname> completed Tai Bwo Wannai Trio");
 %tbwt_main = ^tbwt_complete;
 ~send_quest_complete(questlist:tbwt, tbwt_raw_karambwan, 250, ^tbwt_questpoints, "You have completed the\\n'Tai Bwo Wannai Trio' Quest!"); // https://web.archive.org/web/20051228165555/http://runescape.salmoneus.net/quests/TaiBwoTrio/taibwocomplt.png
 queue(tbwt_timfraku_talk_to_sons, 0, 0);

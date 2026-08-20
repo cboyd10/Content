@@ -1,4 +1,4 @@
-[proc,roll_on_drop_table](dbrow $data)(namedobj, int)
+[proc,roll_on_drop_table_single](dbrow $data)(namedobj, int, int)
 def_namedobj $drop;
 def_int $drop_count;
 def_int $drop_chance;
@@ -11,10 +11,39 @@ while($i <= db_getfieldcount($data, drop_table:drop)) {
     $drop, $drop_count, $drop_chance = db_getfield($data, drop_table:drop, $i);
     $total = sub($total, $drop_chance);
     if ($rand >= $total) {
-        return($drop, $drop_count);
+        return($drop, $drop_count, $drop_chance);
     } else {
         $i = add($i, 1);
     }
 }
 // if drop table doesnt add up to the total chance, return the last drop
-return($drop, $drop_count);
+return($drop, $drop_count, $drop_chance);
+
+// Rolls the drop table `$multiplier` times (from the live-mutable
+// droprate_multiplier() rate, issue #4) and keeps whichever roll landed on
+// the rarest drop (lowest $drop_chance; ties broken arbitrarily). At
+// multiplier=1 this loop runs exactly once, reproducing
+// roll_on_drop_table_single's output byte-for-byte.
+//
+// Reference (content/scripts/skill_mining/configs/gem_rock_table.dbrow,
+// total=128: opal=60, jade=30, red_topaz=15, sapphire=9, emerald=5, ruby=5,
+// diamond=4): at multiplier=4, opal ~4.8% (not 0%), diamond ~11.9%.
+[proc,roll_on_drop_table](dbrow $data)(namedobj, int)
+def_int $multiplier = droprate_multiplier();
+def_namedobj $best_drop;
+def_int $best_count;
+def_int $best_chance = 999999;
+def_int $roll = 0;
+while ($roll < $multiplier) {
+    def_namedobj $drop;
+    def_int $drop_count;
+    def_int $drop_chance;
+    $drop, $drop_count, $drop_chance = ~roll_on_drop_table_single($data);
+    if ($drop_chance < $best_chance) {
+        $best_drop = $drop;
+        $best_count = $drop_count;
+        $best_chance = $drop_chance;
+    }
+    $roll = add($roll, 1);
+}
+return($best_drop, $best_count);

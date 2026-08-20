@@ -153,7 +153,7 @@ if (%spy = 1) {
 %spy = ^blackknight_complete;
 inv_add(inv, coins, 2500);
 mes("Sir Amik hands you 2500 coins.");
-session_log(^log_adventure, "Quest complete: Black Knight's Fortress");
+session_log(^log_adventure, "<displayname> completed Black Knight's Fortress");
 ~send_quest_complete(questlist:fortress, coins, 250, ^blackknight_questpoints, "You have completed the\\nBlack Knights' Fortress Quest!");
 
 [proc,black_knights_aggro](coord $first_search_coord, coord $all_search_coord)

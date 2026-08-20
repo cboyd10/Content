@@ -93,7 +93,7 @@ if_close;
 
 [queue,priest_quest_complete]
 %prieststart = ^priest_complete;
-session_log(^log_adventure, "Quest complete: The Restless Ghost");
+session_log(^log_adventure, "<displayname> completed The Restless Ghost");
 ~send_quest_complete(questlist:priest, ghostskull, 220, ^priest_questpoints, "You have completed the\\nRestless Ghosts' Quest!");
 stat_advance(prayer, 11250);
 

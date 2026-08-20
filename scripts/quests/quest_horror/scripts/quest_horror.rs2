@@ -493,7 +493,7 @@ stat_advance(strength, 46620);
 stat_advance(ranged, 46620);
 inv_add(inv, horror_casket, 1);
 %horrorquest = ^horror_complete;
-session_log(^log_adventure, "Quest complete: Horror from the Deep");
+session_log(^log_adventure, "<displayname> completed Horror from the Deep");
 ~send_quest_complete(questlist:horror, horror_casket, 225, ^horror_questpoints, "You have survived the\\nHorror From The Deep!");
 
 [opobj3,horror_casket]

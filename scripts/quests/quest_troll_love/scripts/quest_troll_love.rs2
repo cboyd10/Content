@@ -295,7 +295,7 @@ stat_advance(agility, 250);
 
 [queue,trollromance_quest_complete]
 // https://web.archive.org/web/20060428042217/http://runescape.salmoneus.net/quests/TrollRomance/trollrmcecomplt.png
-session_log(^log_adventure, "Quest complete: Troll Romance");
+session_log(^log_adventure, "<displayname> completed Troll Romance");
 %troll_love = ^troll_love_complete;
 // Gems given in the below order as per: https://youtu.be/V88fh4k0Po4?si=Gyb2h6BI9566rs3Z&t=969
 inv_add(inv, uncut_diamond, 1);

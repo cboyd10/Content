@@ -28,5 +28,5 @@ stat_advance(defence, 6000);
 stat_advance(strength, 6000);
 stat_advance(hitpoints, 6000);
 stat_advance(crafting, 6000);
-session_log(^log_adventure, "Quest complete: In Search of the Myreque");
+session_log(^log_adventure, "<displayname> completed In Search of the Myreque");
 ~send_quest_complete2(questlist:routequest, steel_sword, 200, ^routequest_questpoints, "'In Search of the Myreque' completed.", "Attack & Defence XP|Strength & Hitpoint XP|Crafting XP|Quick Route to Mort'ton");

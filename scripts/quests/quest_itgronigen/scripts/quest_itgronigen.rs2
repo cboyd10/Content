@@ -266,5 +266,5 @@ queue(itgronigen_quest_complete, 0, 0);
 @professor_friend_of_gods;
 
 [queue,itgronigen_quest_complete]
-session_log(^log_adventure, "Quest complete: Observatory");
+session_log(^log_adventure, "<displayname> completed Observatory");
 ~send_quest_complete(questlist:itgronigen, null, 0, ^itgronigen_questpoints, null);

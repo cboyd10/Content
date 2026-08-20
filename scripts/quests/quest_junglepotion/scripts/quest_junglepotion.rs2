@@ -72,5 +72,5 @@ if ($loc ! null) {
 [queue,junglepotion_quest_complete]
 %junglepotion = ^junglepotion_complete;
 stat_advance(herblore, 7750);
-session_log(^log_adventure, "Quest complete: Jungle Potion");
+session_log(^log_adventure, "<displayname> completed Jungle Potion");
 ~send_quest_complete(questlist:junglepotion, marentill, 220, ^junglepotion_questpoints, "You have completed the\\nJungle Potion Quest!");

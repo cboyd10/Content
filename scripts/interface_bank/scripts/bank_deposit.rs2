@@ -5,6 +5,30 @@
 [inv_button5,bank_side:inv] @bank_deposit(last_slot, null);
 [inv_buttond,bank_side:inv] inv_movetoslot(inv, inv, last_slot, last_targetslot);
 
+[if_button,bank_main:com_103] @bank_deposit_all(inv);
+[if_button,bank_main:com_104] @bank_deposit_all(worn);
+
+// deposit every item currently held in $inv into the bank.
+[label,bank_deposit_all](inv $inv)
+def_obj $previous_weapon = inv_getobj(worn, ^wearpos_rhand);
+def_int $size = inv_size($inv);
+def_int $slot = 0;
+
+while ($slot < $size) {
+    def_obj $item = inv_getobj($inv, $slot);
+    if ($item ! null) {
+        if (~bank_check_allowed($item, ^false) = true) {
+            def_int $number = inv_total($inv, $item);
+            ~bank_deposit_request($inv, $item, $number, $slot, ^false);
+        }
+    }
+    $slot = add($slot, 1);
+}
+
+// worn items affect bonuses/appearance/weight - recompute in case any were deposited.
+// (harmless no-op when depositing from the backpack, since nothing in worn changed)
+~update_all($previous_weapon);
+
 [label,bank_deposit](int $slot, int $requested_number)
 // Check if the slot was empty.
 def_obj $item = inv_getobj(inv, $slot);

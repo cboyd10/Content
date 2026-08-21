@@ -329,4 +329,4 @@ inv_add(bank, coins, 25);
 ~initalltabs;
 ~update_all(inv_getobj(worn, ^wearpos_rhand));
 
-session_log(^log_adventure, "Completed tutorial island");
+session_log(^log_adventure, "<displayname> completed tutorial island");

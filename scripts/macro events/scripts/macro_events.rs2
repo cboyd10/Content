@@ -118,7 +118,7 @@ return($count);
 
 // teleports the player to a random location, using the coords in configs/macro_events_teleports.enum
 [queue,macro_event_fail_teleport]
-session_log(^log_adventure, "Failed random event and got teleported");
+session_log(^log_adventure, "<displayname> failed random event and got teleported");
 def_coord $teleport_coord;
 if (map_members = ^true) {
     $teleport_coord = enum(int, coord, macro_event_fail_teleports_members, random(enum_getoutputcount(macro_event_fail_teleports_members)));

@@ -715,6 +715,7 @@ x=181
 y=30
 width=151
 height=14
+clientcode=207
 font=b12_full
 shadowed=yes
 text=The Bank of RuneScape
@@ -870,3 +871,45 @@ font=p12_full
 shadowed=yes
 text=Swap
 colour=0xFF981F
+
+[com_103]
+type=text
+x=219
+y=290
+buttontype=normal
+width=74
+height=12
+center=yes
+font=p11_full
+shadowed=yes
+text=Deposit Inv
+colour=0xFF981F
+overcolour=0xFFFFFF
+
+[com_104]
+type=text
+x=219
+y=304
+buttontype=normal
+width=74
+height=12
+center=yes
+font=p11_full
+shadowed=yes
+text=Deposit Worn
+colour=0xFF981F
+overcolour=0xFFFFFF
+
+[com_105]
+type=text
+x=44
+y=32
+buttontype=normal
+clientcode=208
+width=60
+height=11
+font=p11_full
+shadowed=yes
+text=Search
+colour=0x808080
+overcolour=0xFFFFFF

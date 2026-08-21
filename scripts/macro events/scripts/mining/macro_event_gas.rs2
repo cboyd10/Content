@@ -59,4 +59,4 @@ if (inv_total(worn, $pickaxe) > 0) {
     inv_add(inv, $pickaxe_broken, 1);
 }
 
-session_log(^log_adventure, "Broke their <oc_name($pickaxe)>");
+session_log(^log_adventure, "<displayname> broke their <oc_name($pickaxe)>");

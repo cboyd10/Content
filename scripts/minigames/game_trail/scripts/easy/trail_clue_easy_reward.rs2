@@ -23,9 +23,9 @@ while ($roll < $rolls) {
     $roll = calc($roll + 1);
 }
 if ($rare > 0) {
-    session_log(^log_adventure, "Completed an Easy Clue Scroll and received <tostring($rare)> Rare Reward(s)!");
+    session_log(^log_adventure, "<displayname> completed an Easy Clue Scroll and received <tostring($rare)> Rare Reward(s)!");
 } else {
-    session_log(^log_adventure, "Completed an Easy Clue Scroll.");
+    session_log(^log_adventure, "<displayname> completed an Easy Clue Scroll.");
 }
 ~trail_complete;
 

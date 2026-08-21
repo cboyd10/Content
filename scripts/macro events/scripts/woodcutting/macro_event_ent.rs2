@@ -143,7 +143,7 @@ if (%macro_ent_counter = 6) {
     npc_facesquare(coord);
     anim(null, 0);
     sound_synth(staff_stab, 1, 0); // osrs used spear sound
-    session_log(^log_adventure, "Broke their <oc_name($axe)>");
+    session_log(^log_adventure, "<displayname> broke their <oc_name($axe)>");
     return;
 }
 %macro_ent_counter = add(%macro_ent_counter, 1);

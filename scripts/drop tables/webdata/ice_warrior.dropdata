@@ -1,0 +1,23 @@
+// Flattened ice_warrior.rs2's [ai_queue3,_ice_warrior] table.
+// npc_param(death_drop) is unset (null) on both category members
+// (icewarrior, icewarrior_queen), so no guaranteed drop.
+// ~trail_mediumcluedrop is a tertiary clue-scroll roll, excluded (separate
+// NPC-agnostic system). map_members is always true, so the adamant_arrow
+// and bloodrune branches are included unconditionally. Slots 97-127
+// (31/128) match no branch: no additional drop.
+[ice_warrior]
+table=drop_table
+data=total,128
+data=drop,iron_battleaxe,1,3
+data=drop,mithril_mace,1,1
+data=drop,naturerune,4,10
+data=drop,chaosrune,3,8
+data=drop,lawrune,2,7
+data=drop,cosmicrune,2,5
+data=drop,mithril_arrow,3,5
+data=drop,adamant_arrow,2,2
+data=drop,deathrune,2,3
+data=drop,bloodrune,2,1
+data=subtable,randomherb,10
+data=drop,coins,15,39
+data=subtable,randomjewel,3

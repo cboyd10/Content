@@ -1,0 +1,39 @@
+// Flattened chaos_druid.rs2's [ai_queue3,chaos_druid] table.
+// npc_param(death_drop) is unset (null) on this NPC's config, so no
+// guaranteed drop.
+//
+// Two structural simplifications, flagged on #57 (issue #69's Implementation
+// Notes: extend minimally and comment rather than silently diverge):
+// - Slots 52-62 (11/128) roll ~randomherb TWICE in the source (two obj_add
+//   calls in the same branch). The .dropdata format has no way to express
+//   "two independent rolls of the same subtable from one branch" - this is
+//   collapsed to a single `data=subtable,randomherb,11` row, which
+//   under-represents this branch's true herb rate by roughly half.
+// - The unholy_symbol_mould branch is gated on `$random < 90 &
+//   %itgronigen >= ^itgronigen_complete` - a per-player quest-state
+//   conditional, out of scope per the "no quest-state" resolved decision
+//   (condition treated as false). Unlike a simple exclusion, treating this
+//   compound condition as false means control falls through to the next
+//   `else if ($random < 91)` branch for the same random value, so slots
+//   89-90 (2/128) resolve to ~randomjewel, not "no drop" - the same
+//   fall-through pattern ~randomjewel's own Ring of Wealth/Legends' Quest
+//   exclusions already use.
+[chaos_druid]
+table=drop_table
+data=total,128
+data=drop,lawrune,2,7
+data=drop,airrune,36,3
+data=drop,bodyrune,9,2
+data=drop,earthrune,9,2
+data=drop,mindrune,12,2
+data=drop,naturerune,3,1
+data=subtable,randomherb,35
+data=subtable,randomherb,11
+data=drop,coins,3,5
+data=drop,coins,8,5
+data=drop,coins,29,3
+data=drop,coins,35,1
+data=drop,vial_water,1,10
+data=drop,bronze_longsword,1,1
+data=drop,snape_grass,1,1
+data=subtable,randomjewel,2

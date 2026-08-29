@@ -1,0 +1,29 @@
+// Flattened kalphite_soldier.rs2's [ai_queue3,kalphite_soldier] table.
+// This script never calls npc_param(death_drop), so there is no
+// guaranteed drop. naturerune's quantity is ~random_range(1,4) in the
+// source - transcribed as 2 (the range's floor-midpoint) for display only
+// (does not affect drop rate). The final randomjewel branch has no
+// explicit upper bound in the source ("else"), so its weight is the
+// remainder up to total (128-124=4).
+[kalphite_soldier]
+table=drop_table
+data=total,128
+data=drop,steel_full_helm,1,4
+data=drop,steel_axe,1,4
+data=drop,steel_scimitar,1,3
+data=drop,mithril_chainbody,1,1
+data=drop,mithril_sq_shield,1,1
+data=drop,adamant_med_helm,1,1
+data=drop,firerune,60,8
+data=drop,chaosrune,12,5
+data=drop,deathrune,3,3
+data=drop,naturerune,2,2
+data=drop,firerune,30,1
+data=subtable,randomherb,1
+data=drop,coins,120,40
+data=drop,coins,40,29
+data=drop,coins,200,10
+data=drop,coins,10,7
+data=drop,coins,450,1
+data=drop,water_skin4,1,3
+data=subtable,randomjewel,4

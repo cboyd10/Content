@@ -106,3 +106,27 @@ table=shadow_warrior
 
 [mugger]
 table=mugger
+
+[_ice_warrior]
+table=ice_warrior
+
+[kalphite_soldier]
+table=kalphite_soldier
+
+[thug]
+table=thug
+
+[paladin]
+table=paladin
+
+[chaos_druid]
+table=chaos_druid
+
+[druid]
+table=druid
+
+[salarin_the_twisted]
+table=salarin_the_twisted
+
+[dark_warrior]
+table=dark_warrior

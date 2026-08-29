@@ -1,0 +1,29 @@
+// Flattened chaos_dwarf.rs2's [ai_queue3,dwarf_chaos] table.
+// npc_param(death_drop) is unset (null) on this NPC's config, so no
+// guaranteed drop.
+[dwarf_chaos]
+table=drop_table
+data=total,128
+data=drop,steel_full_helm,1,2
+data=drop,mithril_longsword,1,1
+data=drop,mithril_sq_shield,1,1
+data=drop,lawrune,3,4
+data=drop,airrune,24,3
+data=drop,chaosrune,10,3
+data=drop,mindrune,37,3
+data=drop,naturerune,9,3
+data=drop,cosmicrune,3,2
+data=drop,deathrune,3,1
+data=drop,waterrune,10,1
+data=drop,coins,92,40
+data=drop,coins,47,18
+data=drop,coins,25,11
+data=drop,coins,150,10
+data=drop,coins,350,2
+data=drop,coins,15,2
+data=drop,muddy_key,1,7
+data=drop,mithril_bar,1,6
+data=drop,coal,1,1
+data=drop,cheese,1,1
+data=drop,tomato,1,1
+data=subtable,randomjewel,5

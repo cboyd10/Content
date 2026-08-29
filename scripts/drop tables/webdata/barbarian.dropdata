@@ -1,0 +1,28 @@
+// Flattened barbarian.rs2's [ai_queue3,_barbarian] table (level 7 & 8
+// Barbarian Village variants). npc_param(death_drop) is unset (null) on
+// both category members (barbarian, barbarian_woman), so no guaranteed
+// drop. ~trail_easycluedrop is a tertiary clue-scroll roll, excluded
+// (separate NPC-agnostic system). Slots 92-127 (36/128) match no branch:
+// no additional drop.
+[barbarian]
+table=drop_table
+data=total,128
+data=drop,bronze_axe,1,6
+data=drop,plainstaff,1,4
+data=drop,iron_mace,1,1
+data=drop,chaosrune,2,5
+data=drop,bronze_arrow,15,3
+data=drop,earthrune,2,3
+data=drop,firerune,5,2
+data=drop,mindrune,5,2
+data=drop,lawrune,2,1
+data=drop,coins,5,42
+data=drop,coins,8,9
+data=drop,coins,17,5
+data=drop,coins,27,3
+data=drop,tin_ore,1,1
+data=drop,fur,1,1
+data=drop,beer,1,1
+data=drop,cooked_meat,1,1
+data=drop,flier,1,1
+data=drop,ring_mould,1,1

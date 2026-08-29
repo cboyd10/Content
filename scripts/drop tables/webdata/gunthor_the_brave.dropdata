@@ -1,0 +1,30 @@
+// Flattened barbarian.rs2's [ai_queue3,gunthor_the_brave] table (a second,
+// separate table in the same file as barbarian's, for a unique named
+// NPC). npc_param(death_drop) is unset (null) on this NPC's config, so no
+// guaranteed drop. ~trail_easycluedrop is a tertiary clue-scroll roll,
+// excluded (separate NPC-agnostic system). Slots 96-127 (32/128) match no
+// branch: no additional drop.
+[gunthor_the_brave]
+table=drop_table
+data=total,128
+data=drop,iron_axe,1,6
+data=drop,bronze_battleaxe,1,4
+data=drop,iron_mace,1,1
+data=drop,bronze_arrow,10,4
+data=drop,chaosrune,3,4
+data=drop,iron_arrow,8,3
+data=drop,earthrune,5,3
+data=drop,mindrune,10,2
+data=drop,firerune,8,2
+data=drop,lawrune,2,1
+data=drop,coins,8,42
+data=drop,coins,12,9
+data=drop,coins,25,5
+data=drop,coins,32,3
+data=drop,cooked_meat,1,1
+data=drop,tin_ore,1,1
+data=drop,amulet_mould,1,1
+data=drop,beer,1,1
+data=drop,fur,1,1
+data=drop,flier,1,1
+data=subtable,randomjewel,1

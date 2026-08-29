@@ -1,0 +1,27 @@
+// Flattened goblin.rs2's @goblin_drop_table label, shared by
+// [ai_queue3,goblin], [ai_queue3,goblin_armed], [ai_queue3,goblin_helmet]
+// and [ai_queue3,goblin_guard] (see triggers.dropdata). npc_param(death_drop)
+// is unset (null) on all 4 debugnames, so no guaranteed drop.
+// ~trail_easycluedrop is a tertiary clue-scroll roll, excluded (separate
+// NPC-agnostic system). map_members is always true, so the bronze_spear
+// branch is included unconditionally. Slots 63-127 (65/128) match no
+// branch: no additional drop.
+[goblin_drop_table]
+table=drop_table
+data=total,128
+data=drop,coins,1,1
+data=drop,brass_necklace,1,1
+data=drop,air_talisman,1,1
+data=drop,beer,1,2
+data=drop,coins,20,2
+data=drop,coins,15,3
+data=drop,coins,9,3
+data=drop,bronze_sq_shield,1,3
+data=drop,earthrune,4,3
+data=drop,bolt,8,3
+data=drop,chefs_hat,1,3
+data=drop,bronze_spear,1,4
+data=drop,bodyrune,7,5
+data=drop,goblin_armour,1,5
+data=drop,waterrune,6,6
+data=drop,coins,5,18

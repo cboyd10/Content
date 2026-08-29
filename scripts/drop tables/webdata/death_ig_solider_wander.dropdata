@@ -1,0 +1,23 @@
+// Flattened death_ig_solider_wander.rs2's [ai_queue3,death_ig_solider_wander]
+// table. npc_param(death_drop) is unset (null) on this NPC's config, so no
+// guaranteed drop. Slot 126-127 (2/128) matches no branch: no additional
+// drop (the final "else" branch's randomjewel subtable covers slots
+// 126..<128, computed from the previous boundary of 126).
+[death_ig_solider_wander]
+table=drop_table
+data=total,128
+data=drop,steel_full_helm,1,1
+data=drop,black_dart,6,9
+data=drop,black_knife,6,13
+data=drop,steel_claws,1,2
+data=drop,black_claws,1,1
+data=drop,steel_bar,1,1
+data=drop,mithril_bar,1,1
+data=subtable,randomherb,8
+data=drop,bloodrune,2,1
+data=drop,coins,3,17
+data=drop,coins,5,10
+data=drop,coins,18,20
+data=drop,coins,50,40
+data=drop,coins,115,2
+data=subtable,randomjewel,2

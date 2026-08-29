@@ -1,0 +1,28 @@
+// Flattened werewolf.rs2's [ai_queue3,_werewolf] table. total=512 (this
+// NPC rolls random(512), not the usual 128). npc_param(death_drop)
+// resolves to wolf_bones on every category member (canafis_werewolf_*), so
+// it's a real guaranteed drop. Slots 509-511 (3/512) match no branch: no
+// additional drop.
+[werewolf]
+table=drop_table
+data=total,512
+data=guaranteed,wolf_bones,1
+data=drop,steel_scimitar,1,32
+data=drop,steel_axe,1,25
+data=drop,steel_full_helm,1,15
+data=drop,mithril_chainbody,1,10
+data=drop,mithril_sq_shield,1,10
+data=drop,rune_med_helm,1,3
+data=subtable,randomherb,3
+data=drop,jug_wine,1,20
+data=drop,raw_chicken,5,10
+data=drop,raw_beef,5,10
+data=drop,raw_bear_meat,5,10
+data=drop,coins,10,80
+data=drop,coins,90,20
+data=drop,coins,120,20
+data=drop,coins,222,20
+data=drop,coins,364,20
+data=drop,fur,1,100
+data=drop,grey_wolf_fur,1,100
+data=subtable,randomjewel,1

@@ -1,0 +1,33 @@
+// Flattened mountain_troll.rs2's [ai_queue3,_mountain_troll] table (the
+// ~troll_drop_table proc it calls is local to this file, not a
+// cross-file shared subroutine, so it's flattened directly here rather
+// than as a separate subtable file). npc_param(death_drop) resolves to
+// big_bones on every category member, so it's a real guaranteed drop. The
+// troll_key_godric/troll_key_eadgar drops (gated on npc_type,
+// %troll_quest/%troll_freed_eadgar progress, and an existing-key check)
+// are per-player quest state, out of scope per the "no quest-state"
+// resolved decision - condition treated as false, branch excluded. Slots
+// 104-127 (24/128) match no branch: no additional drop.
+[mountain_troll]
+table=drop_table
+data=total,128
+data=guaranteed,big_bones,1
+data=drop,steel_med_helm,1,4
+data=drop,black_warhammer,1,3
+data=drop,steel_warhammer,1,3
+data=drop,adamant_med_helm,1,1
+data=drop,adamnt_warhammer,1,1
+data=drop,mithril_sq_shield,1,1
+data=drop,earthrune,60,8
+data=drop,naturerune,7,5
+data=drop,lawrune,2,3
+data=drop,earthrune,45,1
+data=drop,earthrune,25,1
+data=subtable,randomherb,15
+data=drop,coins,35,29
+data=drop,coins,100,10
+data=drop,coins,8,7
+data=drop,coins,50,6
+data=drop,coins,250,1
+data=drop,cert_coal,3,3
+data=drop,cert_raw_mackerel,3,2

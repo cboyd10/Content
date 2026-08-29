@@ -82,3 +82,27 @@ table=grip
 
 [rat]
 table=rat
+
+[death_ig_solider_wander]
+table=death_ig_solider_wander
+
+[_werewolf]
+table=werewolf
+
+[earthwarrior]
+table=earthwarrior
+
+[otherworldly_being]
+table=otherworldly_being
+
+[_troll_general]
+table=troll_general
+
+[_mountain_troll]
+table=mountain_troll
+
+[shadow_warrior]
+table=shadow_warrior
+
+[mugger]
+table=mugger

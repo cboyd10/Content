@@ -1,0 +1,35 @@
+// Flattened dark_wizard.rs2's [ai_queue3,young_dark_wizard] table (level 7
+// variant). map_members is always true, so the bloodrune branch is used
+// (not the f2p blackwizhat fallback). Slots 112-127 (16/128) match no
+// branch: no additional drop.
+[young_dark_wizard]
+table=drop_table
+data=total,128
+data=drop,plainstaff,1,8
+data=drop,blackwizhat,1,4
+data=drop,black_robe,1,3
+data=drop,earthrune,36,4
+data=drop,airrune,10,3
+data=drop,waterrune,10,3
+data=drop,earthrune,10,3
+data=drop,firerune,10,3
+data=drop,airrune,18,2
+data=drop,waterrune,18,2
+data=drop,earthrune,18,2
+data=drop,firerune,18,2
+data=drop,naturerune,4,7
+data=drop,chaosrune,5,6
+data=drop,mindrune,10,3
+data=drop,bodyrune,10,3
+data=drop,mindrune,18,2
+data=drop,bodyrune,18,2
+data=drop,bloodrune,2,2
+data=drop,cosmicrune,2,1
+data=drop,lawrune,3,1
+data=drop,coins,1,17
+data=drop,coins,2,16
+data=drop,coins,4,7
+data=drop,coins,29,3
+data=drop,coins,30,1
+data=drop,water_talisman,1,1
+data=drop,fire_talisman,1,1

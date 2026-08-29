@@ -1,0 +1,21 @@
+// Flattened ~randomjewel (shared_droptables.rs2). Ring of Wealth branch
+// excluded (treated as the not-wearing-RoW / base random(128) case, per the
+// 2026-08-24 grilling session). The Legends' Quest branch that unlocks
+// ~megararetable early is excluded too (treated as quest-incomplete/false).
+// With both excluded, the trailing $random<65 slot falls to the
+// coordz(coord) > 6400 check, which resolves to chaos_talisman for every
+// pilot NPC that reaches this table (see README.md) - nature_talisman is
+// never produced by any transcribed pilot table and is intentionally
+// omitted. Slots 65-127 (63/128) match no branch in the source: no
+// additional drop.
+[randomjewel]
+table=drop_table
+data=total,128
+data=drop,uncut_sapphire,1,32
+data=drop,uncut_emerald,1,16
+data=drop,uncut_ruby,1,8
+data=drop,uncut_diamond,1,2
+data=drop,rune_javelin,5,1
+data=drop,keyhalf1,1,1
+data=drop,keyhalf2,1,1
+data=drop,chaos_talisman,1,4

@@ -1,0 +1,9 @@
+// Flattened ~megararetable (shared_droptables.rs2). Slots 15-127 (113/128)
+// match no branch in the source ($drop stays null and the proc falls off
+// the end without a return): no additional drop.
+[megararetable]
+table=drop_table
+data=total,128
+data=drop,rune_spear,1,8
+data=drop,dragonshield_a,1,4
+data=drop,dragon_spear,1,3

@@ -1,0 +1,41 @@
+// Maps each pilot NPC's [ai_queue3,<trigger>] key (../scripts/*.rs2) to the
+// table file (in this directory) that computes its flattened drops.
+// Category keys (leading underscore) are resolved to member debugnames at
+// runtime via content/pack/category.pack + every .npc file's category= line
+// (see README.md) - this manifest only records which table a trigger uses,
+// not which debugnames it covers.
+[_citizen]
+table=man_drop_table
+
+[al_kharid_warrior]
+table=man_drop_table
+
+[thief1]
+table=man_drop_table
+
+[thief_blanket]
+table=man_drop_table
+
+[_citizen_burthorpe]
+table=man_drop_table
+
+[_bear]
+table=bear
+
+[firegiant]
+table=firegiant
+
+[_guard]
+table=guard
+
+[bearded_dark_wizard]
+table=bearded_dark_wizard
+
+[young_dark_wizard]
+table=young_dark_wizard
+
+[_cow]
+table=cow
+
+[_chicken]
+table=chicken

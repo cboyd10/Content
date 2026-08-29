@@ -1,0 +1,11 @@
+// Flattened chicken.rs2's [ai_queue3,_chicken] table. raw_chicken is an
+// unconditional obj_add (guaranteed every kill); the feather roll is
+// separate random(128) logic. trail_checkmediumdrop tertiary clue roll
+// excluded (separate NPC-agnostic system). Slots 64-127 (64/128) match no
+// branch: no additional drop.
+[chicken]
+table=drop_table
+data=total,128
+data=guaranteed,raw_chicken,1
+data=drop,feather,15,32
+data=drop,feather,5,32

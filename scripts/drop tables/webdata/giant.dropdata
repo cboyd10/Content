@@ -1,0 +1,31 @@
+// Flattened giant.rs2's [ai_queue3,giant] table. npc_param(death_drop)
+// resolves to big_bones, a real guaranteed drop. Slots 98-127 (30/128)
+// match no branch: no additional drop.
+[giant]
+table=drop_table
+data=total,128
+data=guaranteed,big_bones,1
+data=drop,iron_full_helm,1,5
+data=drop,iron_dagger,1,4
+data=drop,iron_kiteshield,1,3
+data=drop,steel_longsword,1,2
+data=drop,iron_arrow,3,6
+data=drop,firerune,15,3
+data=drop,waterrune,7,3
+data=drop,lawrune,2,3
+data=drop,steel_arrow,10,2
+data=drop,mindrune,3,2
+data=drop,cosmicrune,2,2
+data=drop,naturerune,6,2
+data=drop,chaosrune,2,1
+data=drop,deathrune,2,1
+data=subtable,randomherb,7
+data=drop,coins,38,14
+data=drop,coins,15,8
+data=drop,coins,52,2
+data=drop,coins,8,4
+data=drop,coins,88,2
+data=drop,limpwurt_root,1,11
+data=drop,beer,1,6
+data=drop,body_talisman,1,2
+data=subtable,randomjewel,3

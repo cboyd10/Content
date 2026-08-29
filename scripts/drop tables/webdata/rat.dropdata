@@ -1,0 +1,10 @@
+// Flattened rat.rs2's [ai_queue3,rat] table. No default death_drop config
+// (npc_param(death_drop) is explicitly "null" on the rat .npc config, i.e.
+// no drop) and no random loot table in the source. The only item
+// (rats_tail) is gated on %hetty quest-progress state and an inventory/bank
+// check - out of scope per the "no quest-state" resolved decision (branch
+// treated as false, same as Ring of Wealth/Legends' Quest). No drop
+// remains.
+[rat]
+table=drop_table
+data=total,0

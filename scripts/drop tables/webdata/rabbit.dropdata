@@ -1,0 +1,8 @@
+// Flattened rabbit.rs2's [ai_queue3,_rabbit] table. No random roll in the
+// source - both drops are unconditional obj_add calls (raw_rabbit) or
+// npc_param(death_drop), which is unset (null) for every category member,
+// so only raw_rabbit is a real guaranteed drop.
+[rabbit]
+table=drop_table
+data=total,0
+data=guaranteed,raw_rabbit,1

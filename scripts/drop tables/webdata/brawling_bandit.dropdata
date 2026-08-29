@@ -1,0 +1,27 @@
+// Flattened bandit.rs2's [ai_queue3,brawling_bandit] table.
+// npc_param(death_drop) is unset (null) on this NPC's config, so no
+// guaranteed drop. map_members is always true, so the bloodrune branch is
+// included unconditionally. Slots 126-127 (2/128) match no branch: no
+// additional drop.
+[brawling_bandit]
+table=drop_table
+data=total,128
+data=drop,iron_scimitar,1,4
+data=drop,steel_sq_shield,1,2
+data=drop,steel_axe,1,1
+data=drop,chaosrune,6,3
+data=drop,waterrune,9,3
+data=drop,airrune,10,2
+data=drop,deathrune,2,2
+data=drop,lawrune,3,2
+data=drop,bloodrune,2,1
+data=drop,mindrune,2,1
+data=drop,naturerune,2,1
+data=subtable,randomherb,37
+data=drop,coins,35,26
+data=drop,coins,12,13
+data=drop,coins,53,10
+data=drop,coins,1,7
+data=drop,coins,80,2
+data=drop,coal,1,6
+data=subtable,randomjewel,3

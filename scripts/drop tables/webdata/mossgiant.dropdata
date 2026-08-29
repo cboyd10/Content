@@ -1,0 +1,34 @@
+// Flattened moss_giant.rs2's [ai_queue3,mossgiant] table.
+// npc_param(death_drop) resolves to big_bones, a real guaranteed drop.
+// map_members is always true, so the mithril_spear and bloodrune branches
+// are included unconditionally (not their f2p coins fallbacks). Slots
+// 93-127 (35/128) match no branch: no additional drop.
+[mossgiant]
+table=drop_table
+data=total,128
+data=guaranteed,big_bones,1
+data=drop,black_sq_shield,1,5
+data=drop,magic_staff,1,2
+data=drop,steel_med_helm,1,2
+data=drop,mithril_sword,1,2
+data=drop,mithril_spear,1,2
+data=drop,steel_kiteshield,1,1
+data=drop,lawrune,3,4
+data=drop,airrune,18,3
+data=drop,earthrune,27,3
+data=drop,chaosrune,7,3
+data=drop,naturerune,6,3
+data=drop,cosmicrune,2,2
+data=drop,iron_arrow,15,2
+data=drop,steel_arrow,30,1
+data=drop,deathrune,3,1
+data=drop,bloodrune,1,1
+data=subtable,randomherb,5
+data=drop,coins,37,19
+data=drop,coins,2,8
+data=drop,coins,119,10
+data=drop,coins,300,2
+data=drop,steel_bar,1,6
+data=drop,coal,1,1
+data=drop,spinach_roll,1,1
+data=subtable,randomjewel,4

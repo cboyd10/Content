@@ -1,0 +1,22 @@
+// Flattened salarin_the_twisted.rs2's [ai_queue3,salarin_the_twisted]
+// table. npc_param(death_drop) is unset (null) on this NPC's config, so
+// no guaranteed drop. Slots 91-127 (37/128) match no branch: no additional
+// drop.
+[salarin_the_twisted]
+table=drop_table
+data=total,128
+data=drop,black_dagger,1,1
+data=drop,waterrune,12,5
+data=drop,lawrune,2,4
+data=drop,naturerune,3,1
+data=drop,firerune,36,1
+data=subtable,randomherb,39
+data=drop,white_berries,1,5
+data=drop,snape_grass,1,1
+data=drop,vial_water,1,1
+data=drop,coins,3,5
+data=drop,coins,24,3
+data=drop,coins,10,3
+data=drop,1dose2defense,1,11
+data=drop,sinister_key,1,10
+data=subtable,randomjewel,1

@@ -1,0 +1,31 @@
+// Flattened black_knight.rs2's @black_knight_drops label, shared by both
+// [ai_queue3,black_knight] and [ai_queue3,aggressive_black_knight] (see
+// triggers.dropdata). npc_param(death_drop) is unset (null) on both
+// debugnames, so no guaranteed drop. Slots 108-127 (20/128) match no
+// branch: no additional drop.
+[black_knight_drops]
+table=drop_table
+data=total,128
+data=drop,iron_sword,1,4
+data=drop,iron_full_helm,1,2
+data=drop,steel_mace,1,1
+data=drop,mithril_arrow,3,4
+data=drop,bodyrune,9,3
+data=drop,chaosrune,6,3
+data=drop,earthrune,10,3
+data=drop,deathrune,2,2
+data=drop,lawrune,3,2
+data=drop,cosmicrune,7,1
+data=drop,mindrune,2,1
+data=subtable,randomherb,3
+data=drop,steel_bar,1,6
+data=drop,tin_ore,1,1
+data=drop,pot_flour,1,1
+data=drop,coins,35,21
+data=drop,coins,1,14
+data=drop,coins,6,11
+data=drop,coins,58,10
+data=drop,coins,12,9
+data=drop,coins,80,2
+data=drop,bread,1,1
+data=subtable,randomjewel,3

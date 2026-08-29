@@ -1,0 +1,10 @@
+// Flattened grip.rs2's [ai_queue3,grip] table. Grip has no
+// `if (npc_findhero = ^false) return;` gate at all (comment: "no
+// heropoints check") - the surrounding quest-progress block only updates
+// %heroquest as a side effect and does not gate the drop.
+// npc_param(death_drop) resolves to grip_keys and is dropped
+// unconditionally via obj_addall (comment: "Key appears for anyone").
+[grip]
+table=drop_table
+data=total,0
+data=guaranteed,grip_keys,1

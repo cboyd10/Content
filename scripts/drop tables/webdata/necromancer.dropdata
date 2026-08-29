@@ -1,0 +1,33 @@
+// Flattened necromancer.rs2's [ai_queue3,necromancer] table.
+// npc_param(death_drop) is unset (null) on this NPC's config, so no
+// guaranteed drop. Slots 112-127 (16/128) match no branch: no additional
+// drop.
+[necromancer]
+table=drop_table
+data=total,128
+data=drop,plainstaff,1,8
+data=drop,zamrobebottom,1,4
+data=drop,zamrobetop,1,3
+data=drop,staff_of_fire,1,1
+data=drop,earthrune,36,4
+data=drop,airrune,10,3
+data=drop,waterrune,10,3
+data=drop,earthrune,10,3
+data=drop,firerune,10,3
+data=drop,airrune,18,2
+data=drop,waterrune,18,2
+data=drop,earthrune,18,2
+data=drop,firerune,18,2
+data=drop,naturerune,5,7
+data=drop,chaosrune,4,6
+data=drop,mindrune,10,3
+data=drop,bodyrune,10,3
+data=drop,mindrune,18,2
+data=drop,bodyrune,18,2
+data=drop,bloodrune,2,2
+data=drop,cosmicrune,2,1
+data=drop,lawrune,3,1
+data=drop,coins,1,17
+data=drop,coins,2,16
+data=drop,coins,4,9
+data=drop,coins,29,3

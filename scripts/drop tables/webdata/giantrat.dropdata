@@ -1,0 +1,7 @@
+// Flattened giant_rat.rs2's [ai_queue3,_giantrat] table. No random roll in
+// the source - both drops are unconditional obj_add calls (raw_rat_meat) or
+// npc_param(death_drop), which is unset (null) for every category member.
+[giantrat]
+table=drop_table
+data=total,0
+data=guaranteed,raw_rat_meat,1

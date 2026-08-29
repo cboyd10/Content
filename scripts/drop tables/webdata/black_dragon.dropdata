@@ -1,0 +1,31 @@
+// Flattened black_dragon.rs2's [ai_queue3,black_dragon] table.
+// npc_param(death_drop) resolves to dragon_bones; dragonhide_black is a
+// separate unconditional obj_add - both are real guaranteed drops.
+// ~trail_hardcluedrop is a tertiary clue-scroll roll, excluded (separate
+// NPC-agnostic system). Slots 122-127 (6/128) match no branch: no
+// additional drop.
+[black_dragon]
+table=drop_table
+data=total,128
+data=guaranteed,dragon_bones,1
+data=guaranteed,dragonhide_black,1
+data=drop,mithril_2h_sword,1,4
+data=drop,mithril_axe,1,3
+data=drop,mithril_battleaxe,1,3
+data=drop,rune_knife,2,3
+data=drop,mithril_kiteshield,1,1
+data=drop,adamant_platebody,1,1
+data=drop,rune_longsword,1,1
+data=drop,adamant_javelin,30,20
+data=drop,firerune,50,8
+data=drop,adamant_dart_p,16,7
+data=drop,lawrune,10,5
+data=drop,bloodrune,15,3
+data=drop,airrune,75,1
+data=drop,coins,196,40
+data=drop,coins,330,10
+data=drop,coins,690,1
+data=drop,adamantite_bar,1,3
+data=drop,chocolate_cake,1,3
+data=subtable,randomjewel,3
+data=subtable,ultrarare_getitem,2

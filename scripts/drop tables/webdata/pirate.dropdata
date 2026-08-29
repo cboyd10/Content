@@ -1,0 +1,31 @@
+// Flattened pirate.rs2's [ai_queue3,_pirate] table. npc_param(death_drop)
+// is unset (null) on every category member (pirate1, pirate2,
+// pirate_aggressive, lady_pirate), so no guaranteed drop.
+// ~trail_checkmediumdrop is a tertiary clue-scroll roll, excluded
+// (separate NPC-agnostic system). map_members is always true, so the
+// eye_patch branch is included unconditionally. Slots 110-127 (18/128)
+// match no branch: no additional drop.
+[pirate]
+table=drop_table
+data=total,128
+data=drop,iron_dagger,1,6
+data=drop,bronze_scimitar,1,4
+data=drop,iron_platebody,1,1
+data=drop,chaosrune,2,6
+data=drop,naturerune,2,5
+data=drop,bronze_arrow,9,3
+data=drop,bronze_arrow,12,2
+data=drop,airrune,10,2
+data=drop,earthrune,9,2
+data=drop,firerune,5,2
+data=drop,lawrune,2,1
+data=drop,coins,4,29
+data=drop,coins,25,13
+data=drop,coins,7,8
+data=drop,coins,12,6
+data=drop,coins,35,4
+data=drop,coins,55,1
+data=drop,eye_patch,1,12
+data=drop,chefs_hat,1,1
+data=drop,iron_bar,1,1
+data=subtable,randomjewel,1

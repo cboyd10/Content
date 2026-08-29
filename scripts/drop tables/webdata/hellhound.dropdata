@@ -1,0 +1,8 @@
+// Flattened hellhound.rs2's [ai_queue3,hellhound] table. The only drop line
+// is npc_param(death_drop), unset (null) on the hellhound .npc config, so
+// there is no guaranteed drop. ~trail_hardcluedrop is a tertiary clue-scroll
+// roll, excluded (separate NPC-agnostic system). No random loot table in
+// the source at all.
+[hellhound]
+table=drop_table
+data=total,0

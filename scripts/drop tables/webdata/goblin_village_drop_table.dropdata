@@ -1,0 +1,31 @@
+// Flattened goblin.rs2's @goblin_village_drop_table label, shared by
+// [ai_queue3,goblin_greenarmour] and [ai_queue3,goblin_redarmour] (see
+// triggers.dropdata). npc_param(death_drop) is unset (null) on both
+// debugnames, so no guaranteed drop. ~trail_easycluedrop is a tertiary
+// clue-scroll roll, excluded (separate NPC-agnostic system).
+// map_members is always true, so the bronze_spear and bronze_javelin
+// branches are included unconditionally (not their f2p coins fallbacks).
+// Slots 109-127 (19/128) match no branch: no additional drop.
+[goblin_village_drop_table]
+table=drop_table
+data=total,128
+data=drop,bronze_axe,1,3
+data=drop,bronze_scimitar,1,1
+data=drop,bronze_spear,1,9
+data=drop,bronze_arrow,7,3
+data=drop,mindrune,2,3
+data=drop,earthrune,4,3
+data=drop,bodyrune,2,3
+data=drop,bronze_javelin,5,2
+data=drop,chaosrune,1,1
+data=drop,naturerune,1,1
+data=subtable,randomherb,2
+data=drop,coins,1,34
+data=drop,coins,3,13
+data=drop,coins,5,8
+data=drop,coins,16,7
+data=drop,coins,24,3
+data=drop,goblin_armour,1,10
+data=drop,grapes,1,1
+data=drop,red_cape,1,1
+data=drop,tin_ore,1,1

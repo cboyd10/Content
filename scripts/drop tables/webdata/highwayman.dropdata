@@ -1,0 +1,7 @@
+// Flattened highwayman.rs2's [ai_queue3,highwayman] table.
+// npc_param(death_drop) is unset (null) on the highwayman .npc config, so
+// the only guaranteed drop is the unconditional black_cape obj_add.
+[highwayman]
+table=drop_table
+data=total,0
+data=guaranteed,black_cape,1

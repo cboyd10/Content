@@ -1,0 +1,36 @@
+// Flattened viking_guard.rs2's @viking_guard_drops label, shared by both
+// [ai_queue3,viking_guard] and [ai_queue3,viking_guard2] (see
+// triggers.dropdata). npc_param(death_drop) is unset (null) on both
+// debugnames, so no guaranteed drop. ~trail_mediumcluedrop is a tertiary
+// clue-scroll roll, excluded (separate NPC-agnostic system). The
+// viking_sword/viking_shield/viking_helmet branches are individually
+// gated on %viking = ^viking_complete (a per-player quest-state
+// conditional distinct from chaos_druid's compound-condition case:
+// here the elseif's own test is purely on $random, so once matched it
+// does not fall through to the next branch - the quest check just makes
+// that matched slot a no-drop) - out of scope per the "no quest-state"
+// resolved decision, so slots 11-14 (3/128) are excluded (no row).
+// Slots 95-127 (33/128) match no branch: no additional drop.
+[viking_guard_drops]
+table=drop_table
+data=total,128
+data=drop,iron_warhammer,1,6
+data=drop,bronze_warhammer,1,3
+data=drop,steel_warhammer,1,1
+data=drop,black_warhammer,1,1
+data=subtable,randomherb,2
+data=drop,coins,15,42
+data=drop,coins,22,9
+data=drop,coins,17,5
+data=drop,coins,27,3
+data=drop,keg_of_beer,1,4
+data=drop,cake,1,4
+data=drop,iron_ore,2,3
+data=drop,copper_ore,5,2
+data=drop,bucket_water,1,1
+data=drop,fur,1,1
+data=drop,tin_ore,1,1
+data=drop,raw_sardine,1,1
+data=drop,beer,1,1
+data=drop,ring_mould,1,1
+data=subtable,randomjewel,1

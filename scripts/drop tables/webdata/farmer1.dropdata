@@ -1,0 +1,23 @@
+// Flattened farmer.rs2's [ai_queue3,farmer1] table. npc_param(death_drop)
+// is unset (null) on this NPC's config, so no guaranteed drop. Slots
+// 109-127 (19/128) match no branch: no additional drop.
+[farmer1]
+table=drop_table
+data=total,128
+data=drop,bronze_med_helm,1,2
+data=drop,iron_dagger,1,1
+data=drop,bronze_arrow,7,3
+data=drop,earthrune,4,2
+data=drop,firerune,6,2
+data=drop,mindrune,9,2
+data=drop,chaosrune,2,1
+data=subtable,randomherb,11
+data=drop,coins,3,38
+data=drop,coins,10,23
+data=drop,coins,5,9
+data=drop,coins,15,4
+data=drop,coins,25,1
+data=drop,fishing_bait,1,5
+data=drop,copper_ore,1,2
+data=drop,earth_talisman,1,2
+data=drop,cabbage,1,1

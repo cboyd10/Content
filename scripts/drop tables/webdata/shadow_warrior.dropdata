@@ -1,0 +1,21 @@
+// Flattened shadow_warrior.rs2's [ai_queue3,shadow_warrior] table.
+// npc_param(death_drop) is unset (null) on this NPC's config, so no
+// guaranteed drop. Slots 106-127 (22/128) match no branch: no additional
+// drop.
+[shadow_warrior]
+table=drop_table
+data=total,128
+data=drop,adamant_spear,1,1
+data=drop,black_dagger_p,1,1
+data=drop,black_knife,1,1
+data=drop,black_longsword,1,1
+data=drop,black_robe,1,1
+data=drop,cosmicrune,3,9
+data=drop,bloodrune,2,6
+data=drop,airrune,45,4
+data=drop,deathrune,2,4
+data=drop,coins,8,47
+data=drop,mithril_bar,1,4
+data=drop,weapon_poison,1,1
+data=subtable,randomjewel,8
+data=subtable,randomherb,18

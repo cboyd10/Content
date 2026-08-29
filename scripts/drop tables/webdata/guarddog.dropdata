@@ -1,0 +1,8 @@
+// Flattened guard_dog.rs2's [ai_queue3,guarddog] table. The only drop line
+// is npc_param(death_drop), unset (null) on the guarddog .npc config, so
+// there is no guaranteed drop. ~trail_checkmediumdrop is a tertiary
+// clue-scroll roll, excluded (separate NPC-agnostic system). No random loot
+// table in the source at all.
+[guarddog]
+table=drop_table
+data=total,0

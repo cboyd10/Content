@@ -1,0 +1,8 @@
+// Flattened jonny_the_beard.rs2's [ai_queue3,jonny_the_beard] table. No
+// npc_param(death_drop) call in the source at all - both drops are
+// unconditional obj_add calls.
+[jonny_the_beard]
+table=drop_table
+data=total,0
+data=guaranteed,intelligence_report,1
+data=guaranteed,bones,1

@@ -1,0 +1,7 @@
+// Flattened jailer.rs2's [ai_queue3,jailer] table. npc_param(death_drop) is
+// unset (null) on the jailer .npc config, so the only guaranteed drop is
+// the unconditional jail_key obj_add.
+[jailer]
+table=drop_table
+data=total,0
+data=guaranteed,jail_key,1

@@ -1,0 +1,21 @@
+// Flattened mugger.rs2's [ai_queue3,mugger] table. npc_param(death_drop)
+// is unset (null) on this NPC's config, so no guaranteed drop.
+// ~trail_easycluedrop is a tertiary clue-scroll roll, excluded (separate
+// NPC-agnostic system). Slots 88-127 (40/128) match no branch: no
+// additional drop.
+[mugger]
+table=drop_table
+data=total,128
+data=drop,mindrune,9,3
+data=drop,waterrune,6,2
+data=drop,earthrune,5,2
+data=subtable,randomherb,13
+data=drop,coins,5,12
+data=drop,coins,15,3
+data=drop,coins,25,1
+data=drop,rope,1,40
+data=drop,fishing_bait,1,6
+data=drop,copper_ore,1,2
+data=drop,bronze_med_helm,1,2
+data=drop,knife,1,1
+data=drop,cabbage,1,1

@@ -1,0 +1,30 @@
+// Flattened dwarf.rs2's @dwarf_drop_table label, shared by all 3 of its
+// [ai_queue3,...] trigger keys (dwarf_normal, dwarf_mountain,
+// dwarf_tunnel - see triggers.dropdata). npc_param(death_drop) is unset
+// (null) on all 3 debugnames, so no guaranteed drop. map_members is
+// always true, so the bolt drop is included unconditionally; its
+// quantity is ~random_range(2,12) in the source - transcribed as 7 (the
+// range's midpoint) for display only, matching man_drop_table's identical
+// bolt roll from #57. Slots 105-127 (23/128) match no branch: no
+// additional drop.
+[dwarf_drop_table]
+table=drop_table
+data=total,128
+data=drop,bronze_pickaxe,1,13
+data=drop,bronze_med_helm,1,4
+data=drop,bronze_battleaxe,1,2
+data=drop,iron_battleaxe,1,1
+data=drop,bolt,7,7
+data=drop,chaosrune,2,4
+data=drop,naturerune,2,4
+data=drop,coins,4,20
+data=drop,coins,10,15
+data=drop,coins,30,2
+data=drop,hammer,1,10
+data=drop,bronze_bar,1,7
+data=drop,iron_ore,1,4
+data=drop,tin_ore,1,3
+data=drop,copper_ore,1,3
+data=drop,iron_bar,1,3
+data=drop,coal,1,2
+data=subtable,randomjewel,1

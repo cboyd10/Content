@@ -1,0 +1,43 @@
+// Flattened steel_dragon.rs2's [ai_queue3,steel_dragon] table. Same
+// independent-roll structure as bronze_dragon/iron_dragon (flagged on
+// #57): a random(512)=0 check for dragon_platelegs, mutually exclusive
+// with and checked before the normal $dropint table. Modeled the same
+// way - this wrapper table's total is 512, dragon_platelegs gets weight
+// 1, and the remaining 511/512 is a subtable reference to
+// steel_dragon_normal. npc_param(death_drop) and the explicit
+// unconditional obj_add both resolve to dragon_bones (one guaranteed row
+// covers both); steel_bar,5 is a separate unconditional obj_add.
+[steel_dragon]
+table=drop_table
+data=total,512
+data=guaranteed,dragon_bones,1
+data=guaranteed,steel_bar,5
+data=drop,dragon_platelegs,1,1
+data=subtable,steel_dragon_normal,511
+
+// steel_dragon's $dropint table (only reached on the 511/512 branch
+// above). ~trail_hardcluedrop(64,...) is a tertiary clue-scroll roll,
+// excluded (separate NPC-agnostic system). The bolts quantity is
+// calc(random(11) + 2) in the source (uniform 2-12) - transcribed as 6
+// (the range's floor-midpoint) for display only (does not affect drop
+// rate). Slots 112-127 (16/128) match no branch: no additional drop.
+[steel_dragon_normal]
+table=drop_table
+data=total,128
+data=drop,rune_dart_p,12,7
+data=drop,rune_mace,1,4
+data=drop,adamant_kiteshield,1,2
+data=drop,rune_knife,7,3
+data=drop,rune_axe,1,2
+data=drop,rune_full_helm,1,1
+data=drop,bloodrune,20,19
+data=drop,rune_javelin,7,20
+data=drop,bolts,6,6
+data=drop,soulrune,5,5
+data=drop,coins,470,17
+data=drop,coins,650,5
+data=drop,3dose2attack,1,13
+data=drop,runite_bar,1,3
+data=drop,2dose2defense,1,3
+data=drop,curry,1,1
+data=drop,curry,2,1

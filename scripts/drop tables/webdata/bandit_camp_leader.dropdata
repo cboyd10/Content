@@ -1,0 +1,27 @@
+// Flattened bandit_camp_leaders.rs2's [ai_queue3,_bandit_camp_leader]
+// table. npc_param(death_drop) is unset (null) on every category member
+// (black_heather, donny_the_lad, speedy_keith), so no guaranteed drop.
+// ~trail_mediumcluedrop/~trail_checkmediumdrop are tertiary clue-scroll
+// rolls, excluded (separate NPC-agnostic system). Slots 126-127 (2/128)
+// match no branch: no additional drop.
+[bandit_camp_leader]
+table=drop_table
+data=total,128
+data=drop,steel_longsword,1,1
+data=drop,steel_full_helm,1,1
+data=drop,lawrune,2,4
+data=drop,naturerune,4,4
+data=drop,bodyrune,12,3
+data=drop,chaosrune,3,3
+data=drop,waterrune,30,3
+data=drop,mindrune,5,1
+data=subtable,randomherb,15
+data=drop,coins,48,30
+data=drop,coins,15,18
+data=drop,coins,8,11
+data=drop,coins,70,10
+data=drop,coins,5,5
+data=drop,coins,150,2
+data=drop,silver_ore,1,11
+data=drop,cert_swordfish,5,2
+data=subtable,randomjewel,2

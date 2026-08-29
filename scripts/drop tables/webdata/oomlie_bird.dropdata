@@ -1,0 +1,7 @@
+// Flattened oomlie_bird.rs2's [ai_queue3,oomlie_bird] table.
+// npc_param(death_drop) is unset (null) on the oomlie_bird .npc config, so
+// the only guaranteed drop is the unconditional raw_oomlie obj_add.
+[oomlie_bird]
+table=drop_table
+data=total,0
+data=guaranteed,raw_oomlie,1

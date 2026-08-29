@@ -1,0 +1,29 @@
+// Flattened lesser_demon.rs2's [ai_queue3,lesser_demon] table.
+// npc_param(death_drop) resolves to ashes, a real guaranteed drop. Two
+// consecutive branches both drop jug_wine,1 (slots 12-13 and 13-14 in the
+// source) - combined here into one row at their summed weight (2+1=3).
+// The final branch has no explicit upper bound in the source ("else"), so
+// its weight is the remainder up to total (128-121=7).
+[lesser_demon]
+table=drop_table
+data=total,128
+data=guaranteed,ashes,1
+data=subtable,randomjewel,4
+data=drop,rune_med_helm,1,1
+data=drop,mithril_sq_shield,1,1
+data=drop,mithril_chainbody,1,1
+data=drop,coins,450,1
+data=drop,steel_axe,1,4
+data=drop,jug_wine,1,3
+data=drop,steel_full_helm,1,4
+data=drop,coins,200,10
+data=drop,firerune,60,8
+data=drop,steel_scimitar,1,3
+data=drop,coins,120,40
+data=drop,firerune,30,1
+data=drop,coins,40,29
+data=subtable,randomherb,1
+data=drop,gold_ore,1,2
+data=drop,deathrune,3,3
+data=drop,chaosrune,12,5
+data=drop,coins,10,7

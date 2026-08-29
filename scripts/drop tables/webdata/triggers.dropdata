@@ -130,3 +130,24 @@ table=salarin_the_twisted
 
 [dark_warrior]
 table=dark_warrior
+
+[farmer1]
+table=farmer1
+
+[chaos_druid_warrior]
+table=chaos_druid_warrior
+
+[jogre]
+table=jogre
+
+[_bandit_camp_leader]
+table=bandit_camp_leader
+
+[kalphite_worker]
+table=kalphite_worker_drop
+
+[kalphite_worker_chamber]
+table=kalphite_worker_drop
+
+[lesser_demon]
+table=lesser_demon

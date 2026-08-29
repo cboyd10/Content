@@ -1,0 +1,30 @@
+// Flattened chaos_druid_warrior.rs2's [ai_queue3,chaos_druid_warrior]
+// table. npc_param(death_drop) is unset (null) on this NPC's config, so
+// no guaranteed drop. Slots 48-57 (10/128) roll ~randomherb TWICE in the
+// source (two obj_add calls in the same branch) - same simplification
+// flagged on #57 for chaos_druid.dropdata: collapsed to a single
+// `data=subtable,randomherb,10` row, which under-represents this branch's
+// true herb rate by roughly half. Slots 90-127 (38/128) match no branch:
+// no additional drop.
+[chaos_druid_warrior]
+table=drop_table
+data=total,128
+data=drop,black_dagger,1,1
+data=drop,firerune,12,5
+data=drop,lawrune,2,4
+data=drop,earthrune,9,2
+data=drop,airrune,36,1
+data=drop,naturerune,3,1
+data=subtable,randomherb,34
+data=subtable,randomherb,10
+data=drop,white_berries,1,5
+data=drop,unicorn_horn_dust,1,2
+data=drop,limpwurt_root,1,1
+data=drop,limpwurt_root,2,1
+data=drop,snape_grass,1,1
+data=drop,vial_water,1,1
+data=drop,coins,3,15
+data=drop,coins,29,3
+data=drop,coins,10,1
+data=drop,1dose2defense,1,1
+data=subtable,randomjewel,1

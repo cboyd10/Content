@@ -1,0 +1,8 @@
+// Flattened unicorn.rs2's [ai_queue3,_unicorn] table.
+// npc_param(death_drop) is unset (null) on both category members
+// (unicorn, black_unicorn), so the only guaranteed drop is the
+// unconditional unicorn_horn obj_add.
+[unicorn]
+table=drop_table
+data=total,0
+data=guaranteed,unicorn_horn,1

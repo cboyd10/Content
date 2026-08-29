@@ -1,0 +1,7 @@
+// Flattened ugthanki.rs2's [ai_queue3,ugthanki] table.
+// npc_param(death_drop) is unset (null) on the ugthanki .npc config, so
+// the only guaranteed drop is the unconditional raw_ugthanki_meat obj_add.
+[ugthanki]
+table=drop_table
+data=total,0
+data=guaranteed,raw_ugthanki_meat,1

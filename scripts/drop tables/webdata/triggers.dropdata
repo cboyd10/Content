@@ -1,9 +1,11 @@
-// Maps each pilot NPC's [ai_queue3,<trigger>] key (../scripts/*.rs2) to the
-// table file (in this directory) that computes its flattened drops.
+// Maps each transcribed NPC's [ai_queue3,<trigger>] key (../scripts/*.rs2)
+// to the table file (in this directory) that computes its flattened drops.
 // Category keys (leading underscore) are resolved to member debugnames at
 // runtime via content/pack/category.pack + every .npc file's category= line
 // (see README.md) - this manifest only records which table a trigger uses,
 // not which debugnames it covers.
+// Pilot set (issue #57): _citizen..._chicken below. Bulk coverage of the
+// remaining 67 NPCs (issue #69) follows.
 [_citizen]
 table=man_drop_table
 
@@ -39,3 +41,44 @@ table=cow
 
 [_chicken]
 table=chicken
+
+// --- issue #69: bulk NPC coverage below ---
+
+[_rabbit]
+table=rabbit
+
+[_giantrat]
+table=giantrat
+
+[hellhound]
+table=hellhound
+
+[guarddog]
+table=guarddog
+
+[jailer]
+table=jailer
+
+[oomlie_bird]
+table=oomlie_bird
+
+[fire_bird]
+table=fire_bird
+
+[highwayman]
+table=highwayman
+
+[jonny_the_beard]
+table=jonny_the_beard
+
+[ugthanki]
+table=ugthanki
+
+[_unicorn]
+table=unicorn
+
+[grip]
+table=grip
+
+[rat]
+table=rat

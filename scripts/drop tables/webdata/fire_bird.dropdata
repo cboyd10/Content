@@ -1,0 +1,9 @@
+// Flattened entrana_firebird.rs2's [ai_queue3,fire_bird] table.
+// npc_param(death_drop) is unset (null) on the fire_bird .npc config. The
+// hot_feather drop is gated on %heroquest < ^hero_complete - a per-player
+// quest-state conditional, out of scope per the "no quest-state" resolved
+// decision (same treatment as Ring of Wealth/Legends' Quest: condition
+// treated as false, branch excluded). No unconditional drop remains.
+[fire_bird]
+table=drop_table
+data=total,0

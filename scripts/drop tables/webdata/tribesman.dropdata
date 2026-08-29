@@ -1,0 +1,32 @@
+// Flattened tribesman.rs2's [ai_queue3,tribesman] table. This NPC rolls
+// random(138), not random(128), so total=138 here (matching the source's
+// own ~trail_mediumcluedrop(138, npc_coord) tertiary call, excluded as a
+// clue-scroll roll). npc_param(death_drop) is unset (null) on this NPC's
+// config, so no guaranteed drop. Slots 136-137 (2/138) match no branch:
+// no additional drop.
+[tribesman]
+table=drop_table
+data=total,138
+data=drop,bronze_spear,1,7
+data=drop,steel_javelin,10,3
+data=drop,poison_bolt,4,2
+data=drop,iron_spear,1,2
+data=drop,steel_arrow_p,5,2
+data=drop,mithril_javelin,10,2
+data=drop,mithril_spear,1,1
+data=drop,unidentified_rogues_purse,1,5
+data=drop,unidentified_snake_weed,1,5
+data=subtable,randomherb,11
+data=drop,coins,15,25
+data=drop,snape_grass,1,20
+data=drop,limpwurt_root,1,12
+data=drop,tbwt_cleaning_cloth,1,12
+data=drop,naturerune,3,8
+data=drop,coins,62,5
+data=drop,gold_ore,1,5
+data=drop,2dose2antipoison,1,3
+data=drop,3dose2antipoison,1,1
+data=drop,bread,1,1
+data=drop,tin_ore,1,1
+data=drop,pot_flour,1,1
+data=subtable,randomjewel,2

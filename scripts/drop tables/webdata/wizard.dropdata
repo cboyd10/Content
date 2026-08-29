@@ -1,0 +1,33 @@
+// Flattened wizard.rs2's [ai_queue3,wizard] table. npc_param(death_drop)
+// is unset (null) on this NPC's config, so no guaranteed drop.
+// map_members is always true, so the bloodrune branch is used (not the
+// f2p mind_talisman fallback). Slots 112-127 (16/128) match no branch: no
+// additional drop.
+[wizard]
+table=drop_table
+data=total,128
+data=drop,plainstaff,1,8
+data=drop,wizards_robe,1,7
+data=drop,bluewizhat,1,3
+data=drop,chaosrune,2,8
+data=drop,naturerune,2,8
+data=drop,airrune,5,3
+data=drop,bodyrune,5,3
+data=drop,earthrune,5,3
+data=drop,firerune,5,3
+data=drop,mindrune,5,3
+data=drop,waterrune,5,3
+data=drop,airrune,12,2
+data=drop,bodyrune,12,2
+data=drop,earthrune,12,2
+data=drop,firerune,12,2
+data=drop,mindrune,12,2
+data=drop,waterrune,12,2
+data=drop,bloodrune,2,1
+data=drop,lawrune,2,1
+data=drop,mind_talisman,1,3
+data=drop,water_talisman,1,3
+data=drop,coins,1,23
+data=drop,coins,2,9
+data=drop,coins,18,7
+data=drop,coins,30,1

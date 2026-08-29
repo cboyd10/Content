@@ -1,0 +1,19 @@
+// Flattened zombie.rs2's [ai_queue3,zombie_entranan] table (a third,
+// separate table in the same file, for the Entrana variant).
+// npc_param(death_drop) is unset (null) on this NPC's config, so no
+// guaranteed drop. Slots 120-127 (8/128) match no branch: no additional
+// drop (the source's own comment confirms "Nothing - 8/128").
+[zombie_entranan]
+table=drop_table
+data=total,128
+data=drop,bronze_axe,1,50
+data=drop,bronze_med_helm,1,4
+data=drop,bronze_longsword,1,1
+data=drop,iron_axe,1,1
+data=drop,airrune,13,4
+data=drop,bronze_arrow,8,4
+data=drop,naturerune,6,1
+data=subtable,randomherb,4
+data=drop,fishing_bait,5,46
+data=drop,coins,18,3
+data=drop,coins,28,2

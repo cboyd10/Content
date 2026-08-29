@@ -1,0 +1,31 @@
+// Flattened kalphite_queen.rs2's [ai_queue3,kalphite_flyingqueen] table.
+// The source itself marks these rates "a WIP" (guesses cross-referenced
+// against a real drop log and OSRS wiki, per the extensive comments) -
+// transcribed here exactly as authored, not re-derived. npc_param(death_drop)
+// is unset (null) on this NPC's config, so no guaranteed drop.
+// ~trail_hardcluedrop is a tertiary clue-scroll roll, excluded (separate
+// NPC-agnostic system). iron_arrow's quantity is add(random(335), 1) in
+// the source (uniform 1-335) - transcribed as 168 (the range's
+// floor-midpoint) for display only (does not affect drop rate).
+[kalphite_flyingqueen]
+table=drop_table
+data=total,128
+data=drop,rune_chainbody,1,14
+data=drop,lava_battlestaff,1,2
+data=drop,rune_warhammer,1,3
+data=drop,rune_axe,1,3
+data=drop,adamant_spear,1,10
+data=drop,mithril_arrow,500,10
+data=drop,iron_arrow,168,3
+data=drop,rune_arrow,100,2
+data=drop,bigoysterpearls,40,3
+data=drop,bloodrune,19,20
+data=drop,naturerune,75,14
+data=drop,firerune,600,10
+data=drop,lawrune,20,5
+data=drop,deathrune,30,3
+data=drop,cert_wine_of_zamorak,20,10
+data=drop,amulet_of_power,1,7
+data=drop,lobster,7,2
+data=drop,dragon_chainbody,1,1
+data=subtable,randomjewel,6

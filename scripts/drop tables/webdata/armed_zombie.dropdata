@@ -1,0 +1,27 @@
+// Flattened zombie.rs2's @armed_zombie label, covering
+// [ai_queue3,zombie_armed] (see triggers.dropdata). npc_param(death_drop)
+// is unset (null) on this debugname, so no guaranteed drop. Slots
+// 125-127 (3/128) match no branch: no additional drop.
+[armed_zombie]
+table=drop_table
+data=total,128
+data=drop,iron_mace,1,3
+data=drop,iron_dagger,1,2
+data=drop,bronze_kiteshield,1,1
+data=drop,mithril_arrow,1,3
+data=drop,airrune,3,3
+data=drop,bodyrune,3,2
+data=drop,chaosrune,4,1
+data=drop,cosmicrune,2,1
+data=drop,firerune,7,1
+data=subtable,randomherb,30
+data=drop,coins,10,10
+data=drop,coins,18,21
+data=drop,coins,26,8
+data=drop,coins,35,6
+data=drop,coins,1,2
+data=drop,fishing_bait,7,26
+data=drop,tinderbox,1,2
+data=drop,eye_of_newt,1,1
+data=drop,tin_ore,1,1
+data=subtable,randomjewel,1

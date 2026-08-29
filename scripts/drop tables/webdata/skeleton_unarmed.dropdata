@@ -1,0 +1,30 @@
+// Flattened skeleton.rs2's @skeleton_unarmed label, shared by both
+// [ai_queue3,skeleton_unarmed] and [ai_queue3,skeleton_unagressive] (see
+// triggers.dropdata). npc_param(death_drop) is unset (null) on both
+// debugnames, so no guaranteed drop. Slots 110-127 (18/128) match no
+// branch: no additional drop.
+[skeleton_unarmed]
+table=drop_table
+data=total,128
+data=drop,bronze_arrow,2,7
+data=drop,bronze_arrow,5,4
+data=drop,iron_arrow,1,4
+data=drop,airrune,15,2
+data=drop,earthrune,3,2
+data=drop,firerune,2,2
+data=drop,chaosrune,3,2
+data=drop,naturerune,3,1
+data=drop,steel_arrow,1,1
+data=subtable,randomherb,21
+data=drop,coins,2,18
+data=drop,coins,12,15
+data=drop,coins,4,7
+data=drop,coins,16,4
+data=drop,coins,25,4
+data=drop,coins,33,4
+data=drop,coins,48,1
+data=drop,iron_dagger,1,6
+data=drop,fire_talisman,1,2
+data=drop,iron_ore,1,1
+data=drop,grain,1,1
+data=subtable,randomjewel,1

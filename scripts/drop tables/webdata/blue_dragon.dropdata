@@ -1,0 +1,30 @@
+// Flattened blue_dragon.rs2's [ai_queue3,blue_dragon] table.
+// npc_param(death_drop) resolves to dragon_bones; dragonhide_blue is a
+// separate unconditional obj_add - both are real guaranteed drops.
+// ~trail_hardcluedrop is a tertiary clue-scroll roll, excluded (separate
+// NPC-agnostic system).
+[blue_dragon]
+table=drop_table
+data=total,128
+data=guaranteed,dragon_bones,1
+data=guaranteed,dragonhide_blue,1
+data=drop,steel_platelegs,1,4
+data=drop,steel_battleaxe,1,3
+data=drop,mithril_axe,1,3
+data=drop,mithril_spear,1,2
+data=drop,mithril_kiteshield,1,1
+data=drop,adamant_full_helm,1,1
+data=drop,rune_dagger,1,1
+data=drop,waterrune,75,8
+data=drop,naturerune,15,5
+data=drop,lawrune,3,3
+data=drop,firerune,37,1
+data=subtable,randomherb,15
+data=drop,coins,44,29
+data=drop,coins,132,25
+data=drop,coins,200,10
+data=drop,coins,11,5
+data=drop,coins,440,1
+data=drop,bass,1,3
+data=drop,adamantite_ore,1,3
+data=subtable,randomjewel,5

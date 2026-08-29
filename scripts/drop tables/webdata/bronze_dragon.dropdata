@@ -1,0 +1,51 @@
+// Flattened bronze_dragon.rs2's [ai_queue3,bronze_dragon] table. Structural
+// case not covered by #57's pilot, flagged there: this NPC has an
+// independent random(1024)=0 check for dragon_platelegs BEFORE its normal
+// $dropint table runs, and returns immediately if it hits (mutually
+// exclusive with the normal table, not an extra roll on top of it). The
+// existing subtable-composition mechanism already models this exactly:
+// this wrapper table's total is 1024, dragon_platelegs gets weight 1, and
+// the remaining 1023/1024 is a subtable reference to bronze_dragon_normal
+// (that table's own total=128 $dropint distribution) - no engine/parser
+// change needed. npc_param(death_drop) resolves to dragon_bones;
+// bronze_bar,5 is a separate unconditional obj_add - both guaranteed and
+// unaffected by which branch of the 1024-roll fires.
+[bronze_dragon]
+table=drop_table
+data=total,1024
+data=guaranteed,dragon_bones,1
+data=guaranteed,bronze_bar,5
+data=drop,dragon_platelegs,1,1
+data=subtable,bronze_dragon_normal,1023
+
+// bronze_dragon's $dropint table (only reached on the 1023/1024 branch
+// above). ~trail_hardcluedrop is a tertiary clue-scroll roll, excluded
+// (separate NPC-agnostic system). The bolts quantity is
+// calc(random(12) + 1) in the source (uniform 1-12) - transcribed as 6
+// (the range's floor-midpoint) for display only (does not affect drop
+// rate). Slots 122-127 (6/128) match no branch: no additional drop.
+[bronze_dragon_normal]
+table=drop_table
+data=total,128
+data=subtable,ultrarare_getitem,1
+data=subtable,randomjewel,4
+data=drop,rune_longsword,1,1
+data=drop,adamant_dart_p,16,1
+data=drop,mithril_2h_sword,1,4
+data=drop,mithril_axe,1,3
+data=drop,mithril_battleaxe,1,3
+data=drop,rune_knife,2,3
+data=drop,mithril_kiteshield,1,1
+data=drop,adamant_platebody,1,1
+data=drop,adamant_javelin,30,20
+data=drop,firerune,50,8
+data=drop,bolts,6,6
+data=drop,lawrune,10,5
+data=drop,bloodrune,15,3
+data=drop,lawrune,25,1
+data=drop,coins,196,40
+data=drop,coins,330,10
+data=drop,coins,690,1
+data=drop,adamantite_bar,1,3
+data=drop,swordfish,2,2
+data=drop,swordfish,1,1

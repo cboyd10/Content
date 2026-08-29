@@ -151,3 +151,24 @@ table=kalphite_worker_drop
 
 [lesser_demon]
 table=lesser_demon
+
+[black_dragon]
+table=black_dragon
+
+[blue_dragon]
+table=blue_dragon
+
+[green_dragon]
+table=green_dragon
+
+[red_dragon]
+table=red_dragon
+
+[bronze_dragon]
+table=bronze_dragon
+
+[iron_dragon]
+table=iron_dragon
+
+[steel_dragon]
+table=steel_dragon

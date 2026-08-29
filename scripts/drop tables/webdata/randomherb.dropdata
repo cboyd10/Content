@@ -1,0 +1,17 @@
+// Flattened ~randomherb (shared_droptables.rs2). map_members is always true on
+// this server (single members world), so the coins,10 f2p fallback never
+// triggers and is not modeled.
+[randomherb]
+table=drop_table
+data=total,128
+data=drop,unidentified_guam,1,32
+data=drop,unidentified_marentill,1,24
+data=drop,unidentified_tarromin,1,18
+data=drop,unidentified_harralander,1,14
+data=drop,unidentified_ranarr,1,11
+data=drop,unidentified_irit,1,8
+data=drop,unidentified_avantoe,1,6
+data=drop,unidentified_kwuarm,1,5
+data=drop,unidentified_cadantine,1,4
+data=drop,unidentified_lantadyme,1,3
+data=drop,unidentified_dwarf_weed,1,3

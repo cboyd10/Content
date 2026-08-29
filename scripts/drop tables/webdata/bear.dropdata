@@ -1,0 +1,8 @@
+// Flattened bear.rs2's [ai_queue3,_bear] table. No random roll at all in
+// the source - both drops are unconditional obj_add calls, i.e. guaranteed
+// every kill.
+[bear]
+table=drop_table
+data=total,0
+data=guaranteed,fur,1
+data=guaranteed,raw_bear_meat,1

@@ -4,9 +4,11 @@ Diffs every spawned, `opN=Attack` NPC debugname (parsed from all `.npc` config f
 
 ## Derived from
 
-- Meta-repo (`cboyd10/runescape`) commit: `3dd147584e251559266a88cfa2b008c921e7163d`
-- `content` submodule commit: `1e105f4f7b9fa8852df07acaef42f96becebcae7`
-- `engine` submodule commit: `a236e1b861f97deb8510a5a0d90230585ce35203`
+Game data (`.npc`/`.jm2`/`pack/*.pack`) and resolution logic (`resolveTriggerKey()`) as of each submodule's `gamenight` tip this issue's work branched from - not this audit's own commits, which only add tooling/report files and don't change either:
+
+- Meta-repo (`cboyd10/runescape`) base commit: `3dd147584e251559266a88cfa2b008c921e7163d`
+- `content` submodule (`gamenight`) commit: `71213b3be8330c5de9aa8bd77d0586900a73eb78`
+- `engine` submodule (`gamenight`) commit: `a236e1b861f97deb8510a5a0d90230585ce35203`
 
 ## Summary
 
@@ -15,7 +17,9 @@ Diffs every spawned, `opN=Attack` NPC debugname (parsed from all `.npc` config f
 - Gap (attackable, spawned, uncovered): **308**
 - Attackable but unspawned (excluded from the gap, listed separately below): **160**
 
-Spot-check: `ardougne_archer`, `black_knight_titan`, `bat`, `arena_guard1`, `babydragon` - **MISSING from gap**: `babydragon` (see note above).
+Spot-check: `ardougne_archer`, `black_knight_titan`, `bat`, `arena_guard1`, `babydragon` - **MISSING from gap**: `babydragon`.
+
+> **Note on `babydragon`:** issue #79 identified this debugname as likely-missing during scoping, but at this audit's commit it has `attackable = true` and **0 spawn location(s)** in the current map data - i.e. it is genuinely unspawned right now (its AI/attack scripts in `content/scripts/npc/scripts/dragon.rs2` are commented out), not merely uncovered. Per this issue's own acceptance criteria ("attackable debugnames with zero spawn locations... are excluded from the reported gap"), it is correctly listed under "Unspawned, skipped for now" below rather than in the gap list - flagging this rather than special-casing it into the gap, since a future map/content change that adds a real spawn would then need this audit re-run anyway.
 
 ## Gap list
 

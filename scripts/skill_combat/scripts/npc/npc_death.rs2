@@ -8,6 +8,12 @@
 // - https://youtu.be/QCUMECkwUb0?t=103
 
 [proc,npc_death]
+// Credit the kill to whichever player dealt the most damage, independent of whether
+// this NPC drops anything (fixes NPCs with no drop table, e.g. Giant Spider, never
+// counting as a kill). Called first so no early return below can skip it.
+if (npc_findhero = ^true) {
+    npc_killcredit;
+}
 // npc_walk(npc_coord) is unnecessary due to npc_setmode(none).
 // But they do it in this screenshot so might be good to do it here just incase: https://i.imgur.com/AfQ1MfF.png
 npc_walk(npc_coord);

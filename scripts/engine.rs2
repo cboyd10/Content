@@ -645,6 +645,8 @@
 [command,.npc_getmode]()(npc_mode)
 // info: Track damage dealt to the active_npc from active_player
 [command,npc_heropoints](int $damage)
+// info: Credit the active_npc's death to active_player, independent of any drop
+[command,npc_killcredit]()
 // info: Set the npc's walktrigger
 [command,npc_walktrigger](int $ai_queue, int $arg)
 // info: Set the secondary npc's walktrigger

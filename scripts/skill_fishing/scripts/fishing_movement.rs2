@@ -7,9 +7,14 @@
 
 [label,move_fishing_spot]
 def_coord $rand_coord = ~fishing_spot_random_coord(npc_type);
+def_int $move_delay = calc(280 + random(250));
 npc_delay(2);
 npc_tele($rand_coord);
-npc_settimer(calc(280 + random(250)));
+npc_settimer($move_delay);
+// issue #150: arm the generic network countdown mask with the same duration
+// as the AI-wake timer above, so the Fishing plugin's Active Spot card can
+// show a live "Moves in" countdown that resets whenever the spot relocates.
+npc_settimermask($move_delay);
 
 [proc,fishing_spot_random_coord](npc $npc)(coord)
 if (nc_param($npc, fishing_movement_enum) = null) {

@@ -621,6 +621,10 @@
 [command,npc_settimer](int $interval)
 // info: Start the secondary npc's timer to run on each $interval cycle
 [command,.npc_settimer](int $interval)
+// info: Arm the npc's generic network "ticks remaining" countdown mask (issue #150), for client-side display - distinct from npc_settimer's AI-wake-timer scheduling above
+[command,npc_settimermask](int $ticks)
+// info: Arm the secondary npc's generic network "ticks remaining" countdown mask (issue #150)
+[command,.npc_settimermask](int $ticks)
 // info: Play a spotanim on the npc
 [command,spotanim_npc](spotanim $spotanim, int $height, int $delay)
 // info: Play a spotanim on the secondary npc
